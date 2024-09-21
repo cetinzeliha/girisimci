@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomy - Zeliha Çetin</title>
+    <style>
+        body {
+            font-family: montserrat;
+            margin: 0;
+            padding: 0;
+            background-color: #00b6f0;
+        }
+        header {
+            background-color: #00b6f0;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 300%;
+            color: #E2DAD6;
+        }
+
+        h1 strong {
+            color: #333;
+        }
+
+        p {
+            line-height: 2;
+            color: #E2DAD6;
+        }
+
+        strong {
+            color: #00b6f0;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .about_me {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .about_me img {
+            border-radius: 50%;
+            width: 250px; 
+            height: 250px; 
+            object-fit: cover; 
+            margin-bottom: 15px;
+        }
+
+        .about_me p {
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            color: #585e5b;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .products_section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .products_section h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .products_container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            flex: 1 1 calc(25% - 20px); 
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .product p {
+            font-size: 1em;
+            color: #666;
+        }
+        .videos_section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .videos_section h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .video_container {
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            height: 400px; 
+            border-radius: 10px;
+        }
+        .contact_section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+        }
+        .contact_section h2 {
+            color: #E2DAD6;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .contact_section p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .contact_section a {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+        }
+        .contact_section img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .products_container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product {
+                flex: 1 1 100%; /* Tam genişlik */
+            }
+            video {
+                height: auto; /* Video yüksekliği otomatik */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 200%;
+            }
+            .about_me p, .contact_section p {
+                font-size: 1em; /* Küçük ekranlarda daha küçük yazı */
+            }
+            nav a {
+                margin: 0 10px; /* Daha yakın bağlantılar */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+</header>
+
+<nav>
+    <a href="https://www.atomy.com/tr/Home" target="_blank">ATOMY</a>
+    <a href="#products">Ürünler</a>
+    <a href="#contact">İletişim</a>
+</nav>
+
+<div class="about_me">
+    <img src="../zeliha/assets/zeliha.jpg" alt="Zeliha Çetin">
+    <h1>Merhaba, ben <strong>Zeliha Çetin</strong>.</h1>
+    <p><strong>ATOMY</strong> ürünlerini sizlerle paylaşmaktan mutluluk duyuyorum. Bu <strong>kaliteli ürünlerle</strong> tanışarak, hem kendiniz hem de sevdikleriniz için en iyisini tercih edebilirsiniz.</p>
+</div>
+
+<div class="products_section" id="products">
+    <h2>Tavsiye Ettiğim Ürünler</h2>
+    <div class="products_container">
+        <div class="product">
+            <img src="../zeliha/assets/product_5.jpg" alt="Ürün 1">
+            <h3>ATOMY LUTEIN</h3>
+            <p>KADİFE ÇİÇEĞİ, ÇİNKO VE A VİTAMİNİ İÇEREN KAPSÜL TAKVİYE EDİCİ GIDA</p>
+        </div>
+        <div class="product">
+            <img src="../zeliha/assets/product_2.jpg" alt="Ürün 2">
+            <h3>ATOMY COLOR FOOD VITAMIN C</h3>
+            <p>TATLI-EKŞİ MANGO AROMASINDA TEMEL C VİTAMİNİ VE 7 ÇEŞİT RENKLİ GIDA SAĞLAR</p>
+        </div>
+        <div class="product">
+            <img src="../zeliha/assets/product_3.jpg" alt="Ürün 3">
+            <h3>ATOMY SPIRULINA</h3>
+            <p>SPİRULİNA İÇEREN KAPSÜL TAKVİYE EDİCİ GIDA</p>
+        </div>
+        <div class="product">
+            <img src="../zeliha/assets/product_4.jpg" alt="Ürün 4">
+            <h3>ATOMY ABSOLUTE</h3>
+            <p>GÜNEŞ UV KORUYUCU</p>
+        </div>
+    </div>
+</div>
+
+<div class="videos_section" id="videos">
+    <h2>Önerdiğim Videolar</h2>
+    <div class="video_container">
+        <video controls>
+            <source src="../zeliha/assets/lutein.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+    <div class="video_container">
+        <video controls>
+            <source src="../zeliha/assets/video2.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+    <div class="video_container">
+        <video controls>
+            <source src="../zeliha/assets/video3.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+    <div class="video_container">
+        <video controls>
+            <source src="../zeliha/assets/video4.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+    <div class="video_container">
+        <video controls>
+            <source src="../zeliha/assets/video5.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+    <br>
+    <h2>Benim Videolarım</h2>
+    <div class="video_container">
+        <video controls>
+            <source src="../zeliha/assets/zel_vid_2.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <video controls>
+            <source src="../zeliha/assets/zel_vid_3.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <video controls>
+            <source src="../zeliha/assets/zel_vid_1.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+</div>
+
+<div class="contact_section" id="contact">
+    <h2>İletişime Geçin</h2>
+    <p>Whatsapp ve Instagram üzerinden bana ulaşabilirsiniz:</p>
+    <a href="https://wa.me/905352696564">
+        <img src="assets/whatsapp-icon.svg" alt="Whatsapp"> +90 535 269 65 64
+    </a>
+    <a href="https://instagram.com/girisimci_cilt_bakimi_saglik">
+        <img src="assets/instagram-icon.svg" alt="Instagram"> /girisimci_cilt_bakimi_saglik
+    </a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Zeliha Çetin. Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>
